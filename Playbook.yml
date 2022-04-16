@@ -1,0 +1,10 @@
+---
+- name: Docker Pull and Run
+  hosts: all
+  remote_user: root
+  tasks:
+    - name: Docker run on local machine
+      docker_image:
+        name: parthikdocker/temp_miniproject
+        source: pull
+

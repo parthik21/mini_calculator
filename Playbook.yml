@@ -5,6 +5,5 @@
   tasks:
     - name: Docker run on local machine
       docker_image:
-        name: parthikdocker/temp_miniproject
+        name: parthikdocker/mini-project
         source: pull
-

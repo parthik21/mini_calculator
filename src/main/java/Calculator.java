@@ -17,6 +17,7 @@ public class Calculator {
         long factorial,fact_input;
         char next = 'y';
         while (next == 'y') {
+            System.out.println("----------Mini Calculator---------");
             System.out.print("Enter what would you like to do\n1.Square Root\n2.Factorial\n3.Natural Logarithm\n4.Power Function\nEnter your choice: ");
             int choice = sc.nextInt();
             switch (choice) {

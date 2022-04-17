@@ -1,7 +1,6 @@
 ---
-- name: Docker Pull and Run
-  hosts: all
-  remote_user: root
+- hosts: all
+  become: true
   tasks:
     - name: Add Docker GPG apt Key
       apt_key:

@@ -28,11 +28,11 @@ pipeline {
                 }
             }
         }
-        stage('Push Iamge') {
+        stage('Push Docker Image') {
             steps {
                 script {
-                    docker.withRegistry('', registryCredential) {
-                        dockerImage.push('latest')
+                    docker.withRegistry( '', 'Docker-Credentials') {
+                        image.push('latest')
                     }
                 }
             }

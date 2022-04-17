@@ -1,15 +1,13 @@
 pipeline {
     environment {
         imagename = "parthikdocker/mini-project"
+        registryCredential = "parthikdocker-dockerhub"
         image = ''
     }
-
     agent any
-
     tools {
         maven 'Maven3'
     }
-
     stages {
         stage('Git clone') {
             steps {
@@ -36,7 +34,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
-                    docker.withRegistry( '', 'Docker-Credentials') {
+                    docker.withRegistry( '', registryCredential) {
                         image.push('latest')
                     }
                 }

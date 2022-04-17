@@ -12,11 +12,11 @@
 #        repo: deb https://download.docker.com/linux/ubuntu focal stable
 #        state: present
 
-    - name: Update apt and install docker-ce
-      apt:
-        name: docker-ce
-        state: latest
-        update_cache: true
+#    - name: Update apt and install docker-ce
+#      apt:
+#        name: docker-ce
+#        state: latest
+#        update_cache: true
 
     - name: Docker run on local machine
       docker_image:

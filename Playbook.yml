@@ -19,7 +19,7 @@
 #        update_cache: true
 
     - name: Docker run on local machine
-      community.docker.docker_image:
+      docker_image:                                 #community.docker.
         name: parthikdocker/mini-project
         source: pull
 

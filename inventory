@@ -1,2 +1,7 @@
-[First_Client]
-44.197.133.103 ansible_user=client1
+Docker ansible_host=44.197.133.103
+
+[servers_group]
+Docker
+
+[servers_group:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'

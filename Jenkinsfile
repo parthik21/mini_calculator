@@ -1,6 +1,11 @@
 pipeline {
+    environment {
+        imagename = "parthikdocker/mini-project"
+        image = ''
+    }
+
     agent any
-    imagename = "parthikdocker/mini-project"
+
     tools {
         maven 'Maven3'
     }

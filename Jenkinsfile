@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    iamgename = "parthikdocker/mini-project"
+    imagename = "parthikdocker/mini-project"
     tools {
         maven 'Maven3'
     }
@@ -37,7 +37,7 @@ pipeline {
                 }
             }
         }
-        stage('Remove Unused docker image') {
+        stage('Remove Garbage docker image') {
           steps{
              sh "docker rmi $imagename:latest"
           }

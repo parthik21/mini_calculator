@@ -47,7 +47,7 @@ pipeline {
         }
         stage('Ansible depoly to diff machine') {
             steps {
-                ansiblePlaybook colorized: true, installation: 'Ansible', inventory: 'inventory', playbook: 'Playbook.yml'
+                ansiblePlaybook credentialsId: "container_access_key", colorized: true, installation: 'Ansible', inventory: 'inventory', playbook: 'Playbook.yml'
             }
         }
     }

@@ -3,7 +3,29 @@
   hosts: all
   remote_user: root
   tasks:
+    - name: Add Docker GPG apt Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker Repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu focal stable
+        state: present
+
+    - name: Update apt and install docker-ce
+      apt:
+        name: docker-ce
+        state: latest
+        update_cache: true
+
     - name: Docker run on local machine
       docker_image:
         name: parthikdocker/mini-project
         source: pull
+
+    - name: Launch the calculator container
+      docker_container:
+        name: calculator
+        image: parthikdocker/mini-project
+        state: started

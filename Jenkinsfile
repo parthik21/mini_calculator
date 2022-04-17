@@ -43,9 +43,14 @@ pipeline {
             }
         }
         stage('Remove Garbage docker image') {
-          steps{
+          steps {
              sh "docker rmi $imagename:latest"
           }
+        }
+        stage('Ansible depoly to diff machine') {
+            steps {
+                ansiblePlaybook colorized: true, installation: 'Ansible', inventory: 'inventory', playbook: 'Playbook.yml'
+            }
         }
     }
 }

@@ -1,3 +1,2 @@
-[alay]
-192.168.43.222 ansible_user=alay
-
+[First_Client]
+172.31.88.213 ansible_user=client1

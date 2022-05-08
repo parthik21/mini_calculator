@@ -1,4 +1,4 @@
-Docker ansible_host=44.197.133.103
+Docker ansible_host=54.208.205.37
 
 [servers_group]
 Docker

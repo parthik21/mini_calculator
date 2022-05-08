@@ -7,7 +7,6 @@
     <groupId>org.my_iiit</groupId>
     <artifactId>project</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <build>
         <plugins>
             <plugin>
@@ -43,11 +42,6 @@
             </plugin>
         </plugins>
     </build>
-<!--    <properties>-->
-<!--        <maven.compiler.source>1.8</maven.compiler.source>-->
-<!--        <maven.compiler.target>1.8</maven.compiler.target>-->
-<!--    </properties>-->
-
     <dependencies>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -71,5 +65,4 @@
             <type>maven-plugin</type>
         </dependency>
     </dependencies>
-
 </project>

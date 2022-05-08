@@ -1,0 +1,8 @@
+2022-04-17 20:35:19.714 [main] INFO  Calculator - The square root of 100.0 is: 10.0
+2022-04-17 20:35:27.544 [main] ERROR Calculator - Number entered to get square root is negative!
+2022-04-17 20:36:15.136 [main] INFO  Calculator - The square root of 100.0 is: 10.0
+2022-04-17 20:36:33.463 [main] ERROR Calculator - Number entered to get square root is negative!
+2022-04-17 20:36:39.731 [main] INFO  Calculator - The factorial of5 is: 120
+2022-04-17 20:36:45.900 [main] ERROR Calculator - Factorial of a negative number cannot be found!
+2022-04-17 20:36:53.646 [main] INFO  Calculator - The natural log of100.0 is: 4.605170185988092
+2022-04-17 20:37:02.169 [main] ERROR Calculator - Input to find Nautral Log is Negative!
